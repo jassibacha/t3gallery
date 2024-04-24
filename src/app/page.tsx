@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { db } from "~/server/db";
 
+// Force dynamic so that the page is always reloaded on refresh
+export const dynamic = "force-dynamic";
+
 const mockUrls = [
   "https://utfs.io/f/303f4ede-52c9-4928-9a27-39407cfabb53-q3d8uc.jpg",
   "https://utfs.io/f/f878ef9f-23a3-43f3-bbed-7356b017215b-ku8nx1.jpg",
