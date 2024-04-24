@@ -8,5 +8,5 @@ export default {
   dbCredentials: {
     connectionString: env.POSTGRES_URL,
   },
-  tablesFilter: ["Theo-ModernReactTutorial_*"],
+  tablesFilter: ["t3gallery_*"],
 } satisfies Config;
