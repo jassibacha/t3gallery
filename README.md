@@ -4,8 +4,8 @@ Following [The Modern React Tutorial](https://www.youtube.com/watch?v=d5x0JCZbAJ
 
 ## TODO
 
-- [ ] Make it deploy (vercel)
-- [ ] Scaffold basic ui with mock data
+- [x] Make it deploy (vercel)
+- [x] Scaffold basic ui with mock data
 - [ ] Actually set up a database (vercel postgres)
 - [ ] Attach database to UI
 - [ ] Add authentication
