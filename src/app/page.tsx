@@ -9,7 +9,7 @@ export default async function HomePage() {
     orderBy: (model, { desc }) => desc(model.id),
   });
 
-  console.log(images);
+  //console.log(images);
 
   return (
     <main className="">
