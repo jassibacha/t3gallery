@@ -9,12 +9,14 @@ async function Images() {
   const images = await db.query.images.findMany({
     orderBy: (model, { desc }) => desc(model.id),
   });
-  return [...images, ...images, ...images].map((image, index) => (
-    <div key={image.id + "-" + index}>
-      <div className="w-48">
+  return images.map((image, index) => (
+    <div key={image.id}>
+      <div className="w-72">
         <img src={image.url} />
       </div>
-      <div>{image.name}</div>
+      <div className="max-w-72 overflow-hidden text-ellipsis whitespace-nowrap">
+        {image.name}
+      </div>
     </div>
   ));
 }

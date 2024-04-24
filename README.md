@@ -12,6 +12,7 @@ Following [The Modern React Tutorial](https://www.youtube.com/watch?v=d5x0JCZbAJ
 - [x] Add authentication
 - [ ] Add image upload
 - [ ] taint (server only)
+- [ ] Use next image component
 - [ ] Error management (w/ Sentry)
 - [ ] Routing / image page (parallel route)
 - [ ] Delete button (w/ Server Actions)
