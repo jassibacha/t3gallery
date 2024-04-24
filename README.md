@@ -11,6 +11,7 @@ Following [The Modern React Tutorial](https://www.youtube.com/watch?v=d5x0JCZbAJ
 - [x] Attach database to UI
 - [x] Add authentication
 - [ ] Add image upload
+- [ ] taint (server only)
 - [ ] Error management (w/ Sentry)
 - [ ] Routing / image page (parallel route)
 - [ ] Delete button (w/ Server Actions)
