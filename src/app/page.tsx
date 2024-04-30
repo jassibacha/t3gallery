@@ -1,14 +1,14 @@
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 import Link from "next/link";
 import { db } from "~/server/db";
+import { getMyImages } from "~/server/queries";
 
 // Force dynamic so that the page is always reloaded on refresh
 export const dynamic = "force-dynamic";
 
 async function Images() {
-  const images = await db.query.images.findMany({
-    orderBy: (model, { desc }) => desc(model.id),
-  });
+  const images = await getMyImages();
+
   return images.map((image, index) => (
     <div key={image.id}>
       <div className="w-72">
